@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Student Result System</h1>
+
+    <input type="text" id="name" placeholder="Student Name">
+    <input type="number" id="physics" placeholder="Physics">
+    <input type="number" id="chemistry" placeholder="Chemistry">
+    <input type="number" id="maths" placeholder="Maths">
+
+    <button onclick="addStudent()">Add Student</button>
+
+    <h2>Student Details</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Physics</th>
+            <th>Chemistry</th>
+            <th>Maths</th>
+            <th>Total</th>
+            <th>Percentage</th>
+        </tr>
+
+        <tbody id="studentTable"></tbody>
+    </table>
+
+    <h3 id="topper"></h3>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
