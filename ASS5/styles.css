@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  z-index: 0;
+}
+
+#red,
+#green,
+#blue,
+#yellow {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: 1;
+  animation: move 3s infinite alternate;
+}
+
+#red {
+  background: rgb(255, 25, 25);
+  --x: -50px;
+  --y: -50px;
+  --rotate: -20deg;
+}
+
+#blue {
+  background: rgb(25, 25, 255);
+  --x: 50px;
+  --y: -50px;
+  --rotate: 20deg;
+}
+
+#green {
+  background: rgb(25, 255, 25);
+  --x: -50px;
+  --y: 50px;
+  --rotate: 20deg;
+}
+
+#yellow {
+  background: rgb(255, 255, 25);
+  --x: 50px;
+  --y: 50px;
+  --rotate: -20deg;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0, 0) rotate(0);
+  }
+
+  to {
+    transform: translate(var(--x), var(--y)) rotate(var(--rotate));
+  }
+}
