@@ -1,0 +1,25 @@
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 60px;
+}
+
+h1 {
+  color: #2563eb;
+}
+
+nav {
+  margin: 25px;
+}
+
+nav a {
+  margin: 10px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
