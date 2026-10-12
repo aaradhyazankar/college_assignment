@@ -1,0 +1,42 @@
+
+.container {
+  text-align: center;
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2563eb;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 25px;
+}
+
+.buttons,
+.custom-input {
+  margin: 20px;
+}
+
+button {
+  padding: 10px 18px;
+  margin: 6px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+input {
+  padding: 10px;
+  width: 150px;
+  font-size: 16px;
+  margin: 6px;
+}
